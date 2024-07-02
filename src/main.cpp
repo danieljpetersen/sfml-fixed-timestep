@@ -75,10 +75,10 @@ int main()
 
 		double newTime = clock.getElapsedTime().asSeconds();
 		double frameTime = newTime - elapsedTime;
-    	if (frameTime > 0.25)
-    	{
-    		frameTime = 0.25;
-    	}
+		if (frameTime > 0.25)
+		{
+			frameTime = 0.25;
+		}
 		elapsedTime = newTime;
 		accumulator += frameTime;
 
@@ -91,7 +91,7 @@ int main()
 
 		for (int i = 0; i < stepCount; i++)
 		{
-            shapePreviousPosition = shapePosition;
+			shapePreviousPosition = shapePosition;
 
 			const int movementAmount = 5;
 			if (moveLeft)
