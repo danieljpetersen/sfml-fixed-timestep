@@ -75,8 +75,10 @@ int main()
 
 		double newTime = clock.getElapsedTime().asSeconds();
 		double frameTime = newTime - elapsedTime;
-        if (frameTime > 0.25)
-            frameTime = 0.25;
+    	if (frameTime > 0.25)
+    	{
+    		frameTime = 0.25;
+    	}
 		elapsedTime = newTime;
 		accumulator += frameTime;
 
